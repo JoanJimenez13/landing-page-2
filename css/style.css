@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana;
+    background: #f2f2f2;
+}
+header{
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+header .container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 650px;
+    align-items: center;
+    justify-content: space-between;
+}
+.textos-header{
+    width: 40%;
+    color: #6d7993;
+}
+.textos-header h1{
+    font-size: 60px;
+}
+.textos-header h2{
+    margin-bottom: 20px;
+}
+header img{
+    width: 600px;
+    z-index: 10;
+    position: relative;
+}
+header .textos-header a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 150px;
+    text-decoration: none;
+    border: 1px solid #96858f;
+    border-radius: 10px;
+    text-align: center;
+    background: #96858f;
+    color: #fff;
+}
+.absolute{
+    background: #96858f;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    width: 100%;
+    height: 275px;
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width:960px){
+    header .container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .textos-header{
+        width: 100%;
+        text-align: center;
+    }
+    header img{
+        width: 450px;
+    }
+}
+@media screen and (max-width:460px){
+    header .container{
+        width: 95%;
+    }
+    .textos-header h1{
+        font-size: 35px;
+    }
+    .textos-header h2{
+        font-size: 20;
+    }
+    header img{
+        width: 350px;
+    }
+}
+@media screen and (max-width:360px){
+    header img{
+        width: 250px;
+    }
+}
